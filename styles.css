@@ -23,6 +23,6 @@ img {
     width: 7rem;
 }
 
-p a {font-variant: small-caps;}
+p a {font-variant: small-caps; color:#8b0000;}
 
-img:hover, img:focus {border-width: .25rem; border-style:solid; border-color: #000;}
+img:hover, img:focus {height:20rem; width:17rem;}
