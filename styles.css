@@ -1,1 +1,24 @@
+em {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 
+main{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#info {
+    float:right;
+    margin-right: 4rem;
+}
+
+img {
+    
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 10rem;
+    width: 7rem;
+}
+
+p a {font-style: oblique;}
+
+img:hover, img:focus {border-width: .25rem; border-style:solid; border-color: #000;}
