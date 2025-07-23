@@ -2,8 +2,12 @@ em {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-main{
+main, p, footer{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    font-size:smaller;
 }
 
 #info {
@@ -19,6 +23,6 @@ img {
     width: 7rem;
 }
 
-p a {font-style: oblique;}
+p a {font-variant: small-caps;}
 
 img:hover, img:focus {border-width: .25rem; border-style:solid; border-color: #000;}
