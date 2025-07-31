@@ -1,28 +1,43 @@
 em {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-main, p, footer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+main,
+p,
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 footer {
-    font-size:smaller;
+    font-size: smaller;
 }
 
 #info {
-    float:right;
+    padding: 5em;
     margin-right: 4rem;
 }
 
 img {
-    
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    height: 10rem;
-    width: 7rem;
+
+    margin: 2rem 2rem;
+    height: 14rem;
+    width: 11rem;
 }
 
-p a {font-variant: small-caps; color:#8b0000;}
+p a {
+    font-variant: small-caps;
+    color: #8b0000;
+}
 
-img:hover, img:focus {height:20rem; width:17rem;}
+img:hover,
+img:focus {
+    border: .35em outset #3fa1e2
+}
+
+li {
+    padding: 1em .5em;
+}
+
+#title-header {
+    background: linear-gradient(45deg, #78a5d5 0%, #ffffff 100%);
+}
