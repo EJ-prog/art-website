@@ -13,15 +13,14 @@ footer {
 }
 
 #info {
-    padding: 5em;
-    margin-right: 4rem;
+    padding: 5%;
+    margin-right: 5%;
 }
 
 img {
-
-    margin: 2rem 2rem;
-    height: 14rem;
-    width: 11rem;
+    margin: 3% 3%;
+    height: 30%;
+    width: 30%;
 }
 
 p a {
@@ -40,4 +39,30 @@ li {
 
 #title-header {
     background: linear-gradient(45deg, #78a5d5 0%, #ffffff 100%);
+}
+
+#nav_list ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    height: 4%;
+    border-top: 2px solid #3fa1e2;
+    border-bottom: 2px solid #3fa1e2;
+}
+
+#nav_list ul li {
+    text-align: center;
+    display: inline;
+    width: 95%;
+    background-color: #bed9eb;
+}
+
+#nav_list ul li a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 655px) {
+    #nav_list ul li {
+        display:block;
+    }
 }

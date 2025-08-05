@@ -6,3 +6,41 @@ main {
 p {
     padding: 1em 3em;
 }
+
+li {
+    padding: 1em .5em;
+}
+
+#nav_list ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid #3fa1e2;
+    border-bottom: 2px solid #3fa1e2;
+}
+
+#nav_list ul li {
+    text-align: center;
+    display: inline;
+    width: 95%;
+    background-color: #bed9eb;
+}
+
+#nav_list ul li a {
+    text-decoration: none;
+}
+
+/* Fix navigation menu breakpoint */
+@media only screen and (max-width: 655px) {
+    #nav_list ul li {
+        display:block;
+    }
+}
+
+/* Fix columns showing artwork breakpoint*/
+@media only screen and (max-width: 640px) {
+    main {
+        column-count: 1;
+        text-align: center;
+    }
+}
