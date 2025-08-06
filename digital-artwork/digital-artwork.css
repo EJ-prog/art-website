@@ -1,6 +1,15 @@
 main {
     margin-top: 1em;
-    column-count: 3;
+    display: grid;
+    /* grid-template-rows: repeat(2, 20px 1fr); */
+    grid-template-columns: repeat(2, 45% 50%);
+    grid-gap: 16px;
+    grid-template-areas:
+        "ser kir";
+}
+
+img {
+    width: 50%;
 }
 
 p {
@@ -9,6 +18,16 @@ p {
 
 li {
     padding: 1em .5em;
+}
+
+.serra {
+    grid-area: ser;
+    background-color: #f2c986;
+}
+
+.kirby {
+    grid-area: kir;
+    background-color: #86f2de;
 }
 
 #nav_list ul {
