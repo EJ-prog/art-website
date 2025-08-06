@@ -54,8 +54,18 @@ li {
     text-align: center;
     display: inline;
     width: 95%;
+}
+
+#nav_list ul li {
+    text-align: center;
+    display: inline;
+    width: 95%;
+}
+
+#nav_list ul li:hover {
     background-color: #bed9eb;
 }
+
 
 #nav_list ul li a {
     text-decoration: none;
@@ -63,6 +73,6 @@ li {
 
 @media only screen and (max-width: 655px) {
     #nav_list ul li {
-        display:block;
+        display: block;
     }
 }
