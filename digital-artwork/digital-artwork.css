@@ -1,19 +1,41 @@
 main {
     margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+div.serra {
+    padding: 1.25rem 1.25rem;
+    margin: 0 1em 0 0;
     display: grid;
-    /* grid-template-rows: repeat(2, 20px 1fr); */
-    grid-template-columns: repeat(2, 45% 50%);
-    grid-gap: 16px;
+    grid-template-columns: repeat(1, 300px 1fr);
+    grid-template-rows: repeat(1, 75px 1fr);
+    /* grid-gap: .35%; */
     grid-template-areas:
-        "ser kir";
+        "ser-h1 ser-h1"
+        "ser-img ser-p";
+}
+
+div.kirby {
+    padding: 1.25rem 1.25rem;
+    margin: 0 1em 0 0;
+    display: grid;
+    grid-template-columns: repeat(1, 240px 1fr);
+    grid-template-rows: repeat(1, 75px 1fr);
+    /* grid-gap: .15%; */
+    grid-template-areas:
+        "kir-h1 kir-h1"
+        "kir-img kir-p";
 }
 
 img {
-    width: 50%;
+    width: 80%;
+    float: left;
+    padding: 0 .5em 0 0;
 }
 
 p {
-    padding: 1em 3em;
+    float: right;
 }
 
 li {
@@ -21,13 +43,44 @@ li {
 }
 
 .serra {
-    grid-area: ser;
+    /* grid-area: ser; */
     background-color: #f2c986;
+    flex-basis: 45%;
+}
+
+.serra h1 {
+    grid-area: ser-h1;
+}
+
+#ser-img {
+    grid-area: ser-img;
+}
+
+#ser-p {
+    grid-area: ser-p;
 }
 
 .kirby {
-    grid-area: kir;
+    /* grid-area: kir; */
     background-color: #86f2de;
+    flex-basis: 45%;
+}
+
+.kirby h1 {
+    grid-area: kir-h1;
+}
+
+#kir-img {
+    grid-area: kir-img;
+}
+
+#kir-p {
+    grid-area: kir-p;
+}
+
+.phr {
+    /* grid-area: phr; */
+    background-color: #de86f2;
 }
 
 #nav_list ul {
@@ -52,17 +105,45 @@ li {
     text-decoration: none;
 }
 
+/* Fix columns showing artwork breakpoint*/
+@media only screen and (max-width: 924px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    #nav_list ul{
+        display: flex;
+    }
+}
+
 /* Fix navigation menu breakpoint */
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 620px) {
     #nav_list ul li {
         display: block;
     }
 }
 
-/* Fix columns showing artwork breakpoint*/
-@media only screen and (max-width: 640px) {
-    main {
-        column-count: 1;
-        text-align: center;
+@media only screen and (max-width: 530px) {
+
+    div.serra {
+        grid-template-columns: repeat(0, 300px 1fr);
+        grid-template-rows: repeat(2, 75px 1fr);
+        /* grid-gap: .35%; */
+        grid-template-areas:
+            "ser-h1"
+            "ser-img"
+            "ser-p";
+    }
+
+    div.kirby {
+        grid-template-columns: repeat(0, 300px 1fr);
+        grid-template-rows: repeat(2, 75px 1fr);
+        /* grid-gap: .35%; */
+        grid-template-areas:
+            "kir-h1"
+            "kir-img"
+            "kir-p";
     }
 }

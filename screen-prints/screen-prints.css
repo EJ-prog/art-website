@@ -1,14 +1,40 @@
 main {
     margin-top: 1em;
-    column-count: 3;
+    display: grid;
+    grid-template-columns: repeat(1, 45% 50%);
+    grid-template-rows: repeat(2, 45% 50%);
+    grid-gap: 16px;
+    grid-template-areas:
+        "sp1 sp2";
+}
+
+div {
+    padding: 1.25rem 1.25rem;
+    
+}
+
+img {
+    width: 50%;
+    float:left;
+    padding: 0 1em 0 0;
 }
 
 p {
-    padding: 1em 3em;
+    float: right;
 }
 
 li {
     padding: 1em .5em;
+}
+
+.screen-print1 {
+    grid-area: sp1;
+    background-color: #f2c986;
+}
+
+.screen-print2 {
+    grid-area: sp2;
+    background-color: #86f2de;
 }
 
 #nav_list ul {
