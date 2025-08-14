@@ -35,8 +35,13 @@ li {
     font-style: normal;
 }
 
-footer {
-    background: linear-gradient(45deg, #9fbfe0 0%, #ffffff 100%);
+footer, 
+#header {
+    background: linear-gradient(45deg, #b8cde3 0%, #ffffff 100%);
+}
+
+#header {
+    font-size: 1.5em;
 }
 
 #info {
