@@ -28,7 +28,7 @@ img:focus {
     border: .35em outset #3fa1e2
 }
 
-#header,
+h1,
 li {
     font-family: "Paprika", system-ui;
     font-weight: 400;
