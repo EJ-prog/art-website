@@ -1,0 +1,124 @@
+main {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+div.art {
+    padding: 1.25rem 1.25rem;
+    margin: 0 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 300px 1fr);
+    grid-template-rows: repeat(1, 75px 1fr);
+    /* grid-gap: .35%; */
+    grid-template-areas:
+        "art-h1 art-h1"
+        "art-img art-p";
+}
+
+figure {
+    display: block;
+}
+
+img {
+    width: 80%;
+    float: left;
+    padding: 0 .5em 0 0;
+    /* margin:0 0;
+    height:22%;
+    width:auto; */
+}
+
+p {
+    float: right;
+}
+
+li {
+    padding: 1em .5em;
+}
+
+h1 {
+    font-family: "Paprika", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.art {
+    /* grid-area: ser; */
+    background-color: #f2c986;
+    flex-basis: 45%;
+}
+
+.art h1 {
+    grid-area: art-h1;
+}
+
+.art-img {
+    grid-area: art-img;
+}
+
+.art-p {
+    grid-area: art-p;
+}
+
+#title-header {
+    background: linear-gradient(45deg, #78a5d5 0%, #ffffff 100%);
+}
+
+#nav_list ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid #3fa1e2;
+    border-bottom: 2px solid #3fa1e2;
+}
+
+#nav_list ul li {
+    text-align: center;
+    display: inline;
+    width: 95%;
+}
+
+#nav_list ul li:hover {
+    background-color: #bed9eb;
+}
+
+#nav_list ul li a {
+    text-decoration: none;
+}
+
+/* Fix columns showing artwork breakpoint*/
+@media only screen and (max-width: 924px) {
+    main {
+        flex-direction: column;
+    }
+
+    div.art {
+        margin: 1em 0;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    #nav_list ul {
+        display: flex;
+    }
+}
+
+/* Fix navigation menu breakpoint */
+@media only screen and (max-width: 620px) {
+    #nav_list ul li {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+
+    div.art {
+        grid-template-rows: repeat(1, 75px 1fr);
+        /* grid-gap: .35%; */
+        grid-template-areas:
+            "art-h1"
+            "art-img"
+            "art-p";
+    }
+}
