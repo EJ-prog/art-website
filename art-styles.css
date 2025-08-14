@@ -39,7 +39,8 @@ li {
     padding: 1em .5em;
 }
 
-h1 {
+h1,
+li {
     font-family: "Paprika", system-ui;
     font-weight: 400;
     font-style: normal;
