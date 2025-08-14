@@ -28,14 +28,18 @@ img:focus {
     border: .35em outset #3fa1e2
 }
 
+h1,
 li {
-    padding: 1em .5em;
     font-family: "Paprika", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
-footer, 
+li {
+    padding: 1em .5em;
+}
+
+footer,
 #header {
     background: linear-gradient(45deg, #b8cde3 0%, #ffffff 100%);
 }
