@@ -3,7 +3,6 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.75em;
-    /* flex-wrap: wrap; */
 }
 
 div.art {
@@ -12,7 +11,6 @@ div.art {
     display: grid;
     grid-template-columns: repeat(1, 300px 1fr);
     grid-template-rows: repeat(1, 75px 1fr);
-    /* grid-gap: .35%; */
     grid-template-areas:
         "art-h1 art-h1"
         "art-img art-p";
@@ -26,9 +24,6 @@ img {
     width: 80%;
     float: left;
     padding: 0 .5em 0 0;
-    /* margin:0 0;
-    height:22%;
-    width:auto; */
 }
 
 p {
@@ -47,7 +42,6 @@ li {
 }
 
 .art {
-    /* grid-area: ser; */
     background-color: #f2c986;
     flex-basis: 45%;
 }
