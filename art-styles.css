@@ -1,7 +1,9 @@
 main {
     margin-top: 1em;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75em;
+    /* flex-wrap: wrap; */
 }
 
 div.art {
@@ -50,6 +52,7 @@ h1 {
 }
 
 .art h1 {
+    white-space: nowrap;
     grid-area: art-h1;
 }
 
@@ -88,9 +91,9 @@ h1 {
 }
 
 /* Fix columns showing artwork breakpoint*/
-@media only screen and (max-width: 924px) {
+@media only screen and (max-width: 1120px) {
     main {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     div.art {
