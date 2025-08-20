@@ -23,7 +23,7 @@ figure {
 img {
     width: 80%;
     float: left;
-    padding: 0 .5em 0 0;
+    padding: 1.25em .5em 0 0;
 }
 
 p {
@@ -48,17 +48,6 @@ p {
     grid-area: art-p;
 }
 
-/* img {
-    margin: 3% 3%;
-    height: 30%;
-    width: 30%;
-}
-
-img:hover,
-img:focus {
-    border: .35em outset #3fa1e2
-} */
-
 /* Fix columns showing artwork breakpoint*/
 @media only screen and (max-width: 1120px) {
     main {
@@ -70,14 +59,13 @@ img:focus {
     }
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 535px) {
 
+    .art h1 {
+        white-space: wrap;
+        width: 10em;
+    }
     div.art {
-        grid-template-rows: repeat(1, 75px 1fr);
-        /* grid-gap: .35%; */
-        grid-template-areas:
-            "art-h1"
-            "art-img"
-            "art-p";
+        display: flex;
     }
 }
