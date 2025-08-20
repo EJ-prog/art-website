@@ -10,3 +10,7 @@ because of how the size of certain images of artwork differ from piece to piece.
 Lastly, I felt that the colors used in the background of the gradient for the headers was too dark and hard on the eyes, so I lightened the main gradient color.
 
 These are what I found with my website that relate to the contents of Chapter 16: Users, Usability, and Web Design. 
+
+
+
+With the feedback I received from Kerry Grindinger, I have included the link to my RedBubble page on all of my websites, and made it larger so that it is easier for people to see. Thank you.
