@@ -1,3 +1,4 @@
+/* Layout for artwork on each art page. */
 main {
     margin: 1em 0;
     display: grid;
@@ -5,6 +6,7 @@ main {
     gap: 1.5em;
 }
 
+/* Organization of title, artwork and description. */
 div.art {
     padding: 1.25rem 1.25rem;
     margin: 0 1em;
@@ -14,10 +16,6 @@ div.art {
     grid-template-areas:
         "art-h1 art-h1"
         "art-img art-p";
-}
-
-figure {
-    display: block;
 }
 
 img {
@@ -30,25 +28,29 @@ p {
     float: right;
 }
 
+/* Overall section of artwork: title, image, and description. */
 .art {
     background-color: #f2c986;
     flex-basis: 45%;
 }
 
+/* Title of artwork. */
 .art h1 {
     white-space: nowrap;
     grid-area: art-h1;
 }
 
+/* Image of artwork. */
 .art-img {
     grid-area: art-img;
 }
 
+/* Description of artwork. */
 .art-p {
     grid-area: art-p;
 }
 
-/* Fix columns showing artwork breakpoint*/
+/* Fixes columns showing artwork breakpoint.*/
 @media only screen and (max-width: 1170px) {
     main {
         grid-template-columns: repeat(1, 1fr);
@@ -59,6 +61,7 @@ p {
     }
 }
 
+/* Fixes breakpoint with layout of text and artwork sections. */
 @media only screen and (max-width: 535px) {
 
     .art h1 {

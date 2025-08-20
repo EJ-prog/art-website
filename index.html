@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+<!-- Link information for Paprika font from GoogleFonts. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<!-- Stylesheet for the layout and format of navbar and other common elements between all pages. -->
+<link rel="stylesheet" href="../styles.css">
+<!-- Link for icons from FontAwesome. -->
 <script src="https://kit.fontawesome.com/fa55b1a2e3.js" crossorigin="anonymous"></script>
 
 <head>
@@ -12,41 +15,40 @@
 
 <body>
     <h1 id="header">Elisabeth's Artwork!</h1>
+    <!-- Navigation bar -->
     <nav id="nav_list">
         <ul>
             <li><a><i class="fa-solid fa-house"></i> Home</a></li>
             <li><a href="art-pages/oil-paintings.html"><i class="fa-solid fa-palette"></i> Oil Paintings</a></li>
-            <li><a href="art-pages/watercolor.html"><i class="fa-solid fa-paintbrush"></i> Watercolor
-                    Paintings</a></li>
+            <li><a href="art-pages/watercolor.html"><i class="fa-solid fa-paintbrush"></i> Watercolor Paintings</a></li>
             <!--Commented out because I wish to include these pages and subject matters.-->
             <!-- <li><a href="art-pages/lithographs.html"><i class="fa-solid fa-paint-roller"></i> Lithographs</a></li>
             <li><a href="art-pages/screen-prints.html"><i class="fa-solid fa-object-group"></i> Screen Prints</a></li> -->
             <li><a href="art-pages/digital-artwork.html"><i class="fa-solid fa-tablet-screen-button"></i> Digital
-                    Illustrations</a></li>
+                    Artwork</a></li>
         </ul>
     </nav>
 
+    <p>There are a variety of mediums I have worked with and
+        would like to include samples of what I have done on
+        this website.
+    </p>
     <main>
-        <p>There are a variety of mediums I have worked with and
-            would like to include samples of what I have done on
-            this webpage.
-        </p>
 
-        <ul>
-            <li>Oil Paintings
+        <ul id="type-info">
+            <li class="art-type">Oil Paintings
                 <a class="info" href="https://en.wikipedia.org/wiki/Oil_painting" target="_blank">Information about Oil
                     Painting</a>
             </li>
-            <li>Watercolor Paintings
+            <li class="art-type">Watercolor Paintings
                 <a class="info" href="https://en.wikipedia.org/wiki/Watercolor_painting" target="_blank">Information
-                    about
-                    Watercolor Painting</a>
+                    about Watercolor Painting</a>
             </li>
             <!-- <li>Lithographs</li>
             <li>Screen Prints</li> -->
-            <li>Digital Illustrations
+            <li class="art-type">Digital Artwork
                 <a class="info" href="https://en.wikipedia.org/wiki/Digital_illustration" target="_blank">Information
-                    about Digital Illustrations</a>
+                    about Digital Artwork</a>
             </li>
         </ul>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/tQw7HlMsBUI?si=R6eUdFLnDzX7aW7p"

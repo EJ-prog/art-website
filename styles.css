@@ -1,3 +1,4 @@
+/* Font types for text that isn't from GoogleFonts. */
 main,
 p,
 footer {
@@ -8,11 +9,13 @@ footer {
     font-size: smaller;
 }
 
+/* Text type and color of the website link for Red Bubble. */
 footer a.art-link {
     font-variant: small-caps;
     color: #8b0000;
 }
 
+/* GoogleFonts attributes */
 h1,
 li {
     font-family: "Paprika", system-ui;
@@ -21,7 +24,7 @@ li {
 }
 
 li {
-    padding: 1em .5em;
+    padding: 1em .25em;
 }
 
 footer,
@@ -29,9 +32,24 @@ footer,
     background: linear-gradient(45deg, #b8cde3 0%, #ffffff 100%);
 }
 
+/* Layout of different art types and relative link(s). */
+.art-type {
+    margin: 0 1em 0 0;
+    display: grid;
+    grid-template-columns: repeat(1, 225px 1fr);
+    grid-template-areas:
+        "art info";
+    grid-area: art;
+}
+
 .info {
-    padding: 5%;
-    margin-right: 5%;
+    grid-area: info;
+}
+
+/* Background and layout for different art types and the corresponding links. */
+#type-info {
+    background: linear-gradient(45deg, #cec4eb 0%, #ffffff 100%);
+    padding: 0 0;
 }
 
 #header {
@@ -66,15 +84,30 @@ footer,
     text-decoration: none;
 }
 
-/* Fix navigation menu breakpoint */
+/* Fixes navigation menu breakpoint. */
 @media only screen and (max-width: 875px) {
     #nav_list ul li {
         display: block;
     }
 }
 
+/* Fixes navbar layout breakpoint. */
 @media only screen and (min-width: 875px) {
     #nav_list ul {
         display: flex;
+    }
+}
+
+/* Fixes type and link background size breakpoint. */
+@media only screen and (max-width: 585px) {
+    #type-info {
+        width: 100%;
+    }
+}
+
+/* Fixes video size breakpoint. */
+@media only screen and (max-width: 570px) {
+    iframe {
+        width: 100%;
     }
 }
