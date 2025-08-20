@@ -33,6 +33,11 @@ footer,
     font-size: 1.5em;
 }
 
+#info {
+    padding: 5%;
+    margin-right: 5%;
+}
+
 #nav_list ul {
     list-style-type: none;
     padding: 1em 0;
