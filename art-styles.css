@@ -30,17 +30,6 @@ p {
     float: right;
 }
 
-li {
-    padding: 1em .5em;
-}
-
-h1,
-li {
-    font-family: "Paprika", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .art {
     background-color: #f2c986;
     flex-basis: 45%;
@@ -57,33 +46,6 @@ li {
 
 .art-p {
     grid-area: art-p;
-}
-
-#header {
-    background: linear-gradient(45deg, #b8cde3 0%, #ffffff 100%);
-    font-size: 1.5em;
-}
-
-#nav_list ul {
-    list-style-type: none;
-    padding: .5em 0;
-    text-align: center;
-    border-top: 2px solid #3fa1e2;
-    border-bottom: 2px solid #3fa1e2;
-}
-
-#nav_list ul li {
-    text-align: center;
-    display: inline;
-    width: 95%;
-}
-
-#nav_list ul li:hover {
-    background-color: #bed9eb;
-}
-
-#nav_list ul li a {
-    text-decoration: none;
 }
 
 /* img {
@@ -105,19 +67,6 @@ img:focus {
 
     div.art {
         margin: 1em 0;
-    }
-}
-
-@media only screen and (min-width: 620px) {
-    #nav_list ul {
-        display: flex;
-    }
-}
-
-/* Fix navigation menu breakpoint */
-@media only screen and (max-width: 620px) {
-    #nav_list ul li {
-        display: block;
     }
 }
 
