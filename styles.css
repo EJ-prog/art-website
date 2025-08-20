@@ -29,13 +29,13 @@ footer,
     background: linear-gradient(45deg, #b8cde3 0%, #ffffff 100%);
 }
 
-#header {
-    font-size: 1.5em;
-}
-
-#info {
+.info {
     padding: 5%;
     margin-right: 5%;
+}
+
+#header {
+    font-size: 1.5em;
 }
 
 #nav_list ul {
