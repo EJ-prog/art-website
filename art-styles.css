@@ -86,6 +86,17 @@ li {
     text-decoration: none;
 }
 
+/* img {
+    margin: 3% 3%;
+    height: 30%;
+    width: 30%;
+}
+
+img:hover,
+img:focus {
+    border: .35em outset #3fa1e2
+} */
+
 /* Fix columns showing artwork breakpoint*/
 @media only screen and (max-width: 1120px) {
     main {
