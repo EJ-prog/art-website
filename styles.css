@@ -17,7 +17,7 @@ li {
 }
 
 li {
-    padding: 1em .25em;
+    padding: 1em 0em;
 }
 
 footer,
@@ -59,13 +59,7 @@ footer,
 #nav_list ul li {
     text-align: center;
     display: inline;
-    width: 95%;
-}
-
-#nav_list ul li {
-    text-align: center;
-    display: inline;
-    width: 95%;
+    width: 100%;
 }
 
 #nav_list ul li:hover {
@@ -77,15 +71,21 @@ footer,
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1110px) {
+    /* #nav_list ul {
+        
+    } */
+}
+
 /* Fixes navigation menu breakpoint. */
-@media only screen and (max-width: 875px) {
+@media only screen and (max-width: 1110px) {
     #nav_list ul li {
         display: block;
     }
 }
 
 /* Fixes navbar layout breakpoint. */
-@media only screen and (min-width: 875px) {
+@media only screen and (min-width: 1110px) {
     #nav_list ul {
         display: flex;
     }
